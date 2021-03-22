@@ -26,7 +26,7 @@ SELECT COUNT(*) FROM user;
 SELECT * FROM user ORDER BY time ASC;
 
 - 使用 SELECT 指令取得 user 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，由近到遠排序。
-SELECT * FROM user WHERE id BETWEEN 2 and 4 ORDER BY time ASC;
+SELECT * FROM user ORDER BY time ASC LIMIT 1, 3;
 
 - 使用 SELECT 指令取得欄位 username 是 ply 的使用者資料。
 SELECT * FROM user WHERE username = 'ply';
